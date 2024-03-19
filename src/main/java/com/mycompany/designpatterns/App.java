@@ -12,8 +12,7 @@ public class App {
         String nom = App.scan.nextLine();
 
         // Création et ajout d'un nouvel abonné dans gestionAlerte
-        gestionAlertes.addAbonne(new Abonne(nom));
-
+        App.gestionAlertes.addAbonne(new Abonne(nom));
     }
 
     private static void creationAlerte() {
