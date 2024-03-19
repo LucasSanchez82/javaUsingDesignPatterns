@@ -49,6 +49,7 @@ public class App {
                     break;
                 case 3:
                     System.out.println(Journal.getInstance());
+                    Journal.getInstance().downloadFile("text");
                     break;
                 default:
                     break;
