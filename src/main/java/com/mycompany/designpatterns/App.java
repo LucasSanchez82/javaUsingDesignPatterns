@@ -27,13 +27,14 @@ public class App {
         int choixUtilisateur = 0;
 
         do {
-            if (choixUtilisateur < 0 || choixUtilisateur > 2) {
+            if (choixUtilisateur < 0 || choixUtilisateur > 3) {
                 System.out.println("\n=> Vous devez choisir entre 0, 1 ou 2 uniquement !");
             }
             System.out.println("\nGestion des alertes");
             System.out.println("-------------------\n");
             System.out.println("\t1. Nouvel abonné");
             System.out.println("\t2. Création d'une alerte");
+            System.out.println("\t3. Voir le journal");
             System.out.println("\t0. Quitter\n");
 
             System.out.print("Votre choix : ");
@@ -45,6 +46,9 @@ public class App {
                     break;
                 case 2:
                     App.creationAlerte();
+                    break;
+                case 3:
+                    System.out.println(Journal.getInstance());
                     break;
                 default:
                     break;

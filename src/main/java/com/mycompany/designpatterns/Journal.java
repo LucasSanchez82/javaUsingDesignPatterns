@@ -3,12 +3,16 @@ package com.mycompany.designpatterns;
 import java.util.ArrayList;
 
 public class Journal {
-
     private ArrayList<String> evenements;
     private static Journal uniqueInstance;
 
     public Journal() {
         this.evenements = new ArrayList<>();
+    }
+    
+    @Override
+    public String toString() {
+        return "Journal{" + "evenements=" + evenements + '}';
     }
 
     public void addEvenement(String evenement) {
